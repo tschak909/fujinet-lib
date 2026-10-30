@@ -4,6 +4,7 @@
 
 - [h89] Add Heathkit H89 targets (h89-cpm, h89-hdos) using FujiBus over the 8255 PPI, port routines from Jeff Tranter's bring-up
 - [h89] Port B is an input (mode word C2H), and every program sets up the 8255
+- [h89] Port A runs straight to the ESP32 (the card's 74LVC245 is gone): the H89 no longer drives DIR and /OE (needs fujinet-firmware #2232)
 
 ## [5.0.0] 2026-10-09
 
